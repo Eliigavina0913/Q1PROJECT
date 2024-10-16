@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #FFDF00;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #FFDF00;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+
+        /* Flexbox layout for products */
+        .product-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 250px;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2, p {
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        /* Apply the same product-container style for bottom sections */
+        .bottom-product-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .bottom-product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 250px;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .bottom-product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .bottom-product:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PASTEE Car Care Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">BestSeller</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Login | Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/461684791_1238266620641936_277192092126334473_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHWSrvmd_XTvjLAo6sufKOhLmcVdAs6p7UuZxV0CzqnteSRZ_cx0GrR3YyRQMj8f5b2ne0We3HHuyDtNoY4Cy-p&_nc_ohc=k8DXk5TveI8Q7kNvgG-jP4M&_nc_ht=scontent-mnl1-2.xx&_nc_gid=ACxKLirtQlZRHS4ZGWgFD0o&oh=03_Q7cD1QEoHoZnUEK2FL_WqBoP_9VtiDKrLAf-DgvK7pYEu06mZA&oe=6725637B" alt="Ceramic Spray Coat" />
+            <h2>Ceramic Spray Coat</h2>
+            <p>All in 1 ceramic wax. Safe for all car colors.<br> High Gloss Ceramic Spray Wax with Super Hydrophobic technology.<br> Recommended for ceramic coated cars & motorcycles. ₱150PHP
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t1.15752-9/461277594_551265870730522_829588641054737828_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE8Z8arzT4NQs7xZ53EedsILbki1M39_1otuSLUzf3_Wq0W8n25fJ8JtsgKd2ISGJkWdrQqFCJmUbtFMcdukNyn&_nc_ohc=MbW20A32CakQ7kNvgFx27PL&_nc_ht=scontent-mnl1-1.xx&_nc_gid=AtM-khLEWYOdGw1S2xrsN9y&oh=03_Q7cD1QFLlE-7M9l-XS-MrcUw8u2xZhII3OBjx7AlIJXtK_fJpA&oe=672568F5" alt="Car Shampoo" />
+            <h2>Car Shampoo</h2>
+            <p>Advance wash and wax formula. Safe on all paint types and clear coats. Leaves a deep, glossy and waxed shine. 1Liter / 1000ml. ₱300PHP
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/461286064_1063315912108692_24366056165726756_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF_CxE7fO-NCqwF3QiKKaKmKOZFUVAE6cco5kVRUATpx7FbKV6rxY2v2d5SIr0q29VaDQC_gY1Lgm7MpPdwAVv1&_nc_ohc=nqyuBJw6qxQQ7kNvgGayUYr&_nc_ht=scontent-mnl1-2.xx&_nc_gid=AtM-khLEWYOdGw1S2xrsN9y&oh=03_Q7cD1QF0Q6_y_l14zY7TJCDViMZrsR-6Sx_AypFLt0Rm81mhSA&oe=6725508F" alt="Carnaubax" />
+            <h2>Carnaubax</h2>
+            <p>Hydrophobic waterproof car wax. Enhances vehicle look and adds shine. ₱190PHP</p>
+        </div>
+    </div>
+
+    <!-- Bottom Product Sections -->
+    <div class="bottom-product-container">
+        <div class="bottom-product">
+            <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/461166007_458596937200898_2151743004268334017_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG8DXAK72-G-4PrWzYenVU024vUO-sjy3bbi9Q76yPLdno_AX_8iFdG4T4r-x3712Oq-4THe7PzJNyY2wHkum1_&_nc_ohc=Ht1Kjmn5ls0Q7kNvgGom_yl&_nc_ht=scontent-mnl1-2.xx&_nc_gid=AwYGiqkL442A2-qddebhG7o&oh=03_Q7cD1QHGtMfVXnxWbAcOwRKKLhmv1KEypqnWZaZAvBFQLAxEhg&oe=67253E7F" alt="Airfreshener" />
+            <h2>Airfreshener</h2>
+            <p>Premium car airfreshener that removes bad odor in seconds.<br> Non-toxic and environment friendly. ₱120PHP</p>
+        </div>
+
+        <div class="bottom-product">
+            <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t1.15752-9/461282536_1569759207294879_652878957093162657_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEYCr2zg3xBRMNjXr01Pdtlu8KUx5zHexe7wpTHnMd7F2FiiKnEyMaYrp2VIWQVv_ZBiUCgpQJxNXQYpe76boHp&_nc_ohc=q7QHkcTkeisQ7kNvgFyGr-S&_nc_ht=scontent-mnl1-1.xx&_nc_gid=AQryWUh5Qr48Mg2GmJHHXKc&oh=03_Q7cD1QGz7cUXqGAwPKcp7OrFK_il5IynxeKCq7g4BKGeooDTbQ&oe=672563E7" alt="Degreaser" />
+            <h2>Degreaser</h2>
+            <p> Premium mighty degreaser.<br> Water soluble. Safe to use. ₱200PHP</p>
+        </div>
+
+        <div class="bottom-product">
+            <img src="https://scontent-mnl1-1.xx.fbcdn.net/v/t1.15752-9/459620600_1028646542390684_5111784567237760353_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEdqfDt0Wdt4uQ5yZ3ftcn0BhEe1lZ6RIgGER7WVnpEiKs-zDpKydcRDAS_Q1i1Vt1XUv_AV2npiKsdE-mD0jw2&_nc_ohc=Zjt2AP-2Xk8Q7kNvgHmk35q&_nc_ht=scontent-mnl1-1.xx&_nc_gid=AwYGiqkL442A2-qddebhG7o&oh=03_Q7cD1QHwRTmwrV3JBa6WxLCbYch9HzHr_3MEFpqkRMi9fAlaxw&oe=67256FE9" alt="Tire Black" />
+            <h2>Tire Black</h2>
+            <p> Glossy tire black.<br> Natural OEM matte shine. ₱120PHP</p>
+        </div>
+    </div>
+
+
+    <!-- Bottom Product Sections -->
+    <div class="bottom-product-container">
+        <div class="bottom-product">
+            <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/461279737_394840480335462_8266719785405924955_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEKP_5gCvJZTDbsp5rb-MCof3XBsU73dl5_dcGxTvd2XhUb5bqv5ARIaQ7NhhNL9eSpwab-Z633e2QiNB1RJ2SD&_nc_ohc=bp08zBIj4ZsQ7kNvgEVAql0&_nc_ht=scontent-mnl1-2.xx&_nc_gid=Ae7OZksV7Yqn-Q-PHuCdFhI&oh=03_Q7cD1QFtm7GQucUMvxm9CCMem6roPh6U6beUeKTiCwiyo5fgxw&oe=67254B2B" alt="Airfreshener" />
+            <h2>All purpose cleaner</h2>
+            <p>Premium all purpose cleaner<br> Non-toxic and environment friendly. <br> citrus based cleaner. ₱120PHP</p>
+        </div>
+
+        <div class="bottom-product">
+            <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/461313750_1567039737223237_5149747935339974239_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHHiNndO6Nu0zVtQri3oyQQt1qrTI48CB63WqtMjjwIHmL262AeTtWn9Lao-HAfWl1YQj6UA6dPRwDlxYlJ_S_k&_nc_ohc=BU8di7KZomEQ7kNvgFJ0co2&_nc_ht=scontent-mnl1-2.xx&_nc_gid=AwYGiqkL442A2-qddebhG7o&oh=03_Q7cD1QEL0WaU0nsVSZ4B4M42JhvQZylsEj3fywfBmyLcxn4CFQ&oe=672543FD" alt="matte" />
+            <h2>Matte finish</h2>
+            <p> Trim restorer.<br> Gives car a new matte trim. Safe to use. ₱100PHP </p>
+        </div>
+
+        <div class="bottom-product">
+            <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/461162798_3416244082001990_4185893898783330707_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH1e5UBzU5hTQ2TcQjF6VrkA53Jb0hu9A8DnclvSG70D95FygLzv_Ss6k5feIhQ1zeFd-y40cO_gsFjSL-T7PwP&_nc_ohc=oEisGDFkVoMQ7kNvgECfCfr&_nc_ht=scontent-mnl1-2.xx&_nc_gid=AwYGiqkL442A2-qddebhG7o&oh=03_Q7cD1QF30ZITqZs8heSJ_3yHvlODKN6vGT9u0ZNiHPH6UPSwhA&oe=67257233" alt="scratch" />
+            <h2>Scratch remover</h2>
+            <p> Advanced rubbing compound.<br> Removes medium to course scratches.₱160PHP</p>
+
+
+            <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/461714365_1068427418144215_4447628931079780816_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH9Y5PrgsplbntRyLyz4fQKPtGYSgVmaH4-0ZhKBWZoftCjHO2P0ujc398gY-rwXMbNNRxffNk8dfQFudQIZN64&_nc_ohc=JRVN5zhfj2oQ7kNvgFJq9h6&_nc_ht=scontent-mnl1-2.xx&_nc_gid=AZjDC5xZjuOYHEMSGlgCb5g&oh=03_Q7cD1QEtgKvpUucmk4litA5DFSHtShtA9WsL-72uVLOQEMAOqw&oe=672557DE" alt="waterless" />
+            <h2>Waterless car wash and wax</h2>
+            <p> Fast spray wipe solution.<br> Cleanes, shines, and protect. ₱150PHP</p>
+
+
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Guapo Car Care Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
